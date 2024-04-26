@@ -36,3 +36,15 @@ w = {
 if(typeof w === 'object' && w !== null) {
   (w as { runANonExistentMethod: Function }).runANonExistentMethod();
 }
+
+// let x: never = true; // Error: Type 'boolean' is not assignable to type 'never'.
+
+// undefined and null are types that refer to the JavaScript primitives undefined and null respectively.
+
+let y: undefined = undefined;
+let z: null = null; // when we asign type null it's type object
+
+console.log("Type of y: ", typeof(y));
+console.log("Type of z: ", typeof(z));
+
+
