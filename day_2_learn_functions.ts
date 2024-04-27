@@ -114,4 +114,14 @@ console.log("pickedCard3: ", pickedCard3);
 let pickedCard4 = pickCard(15);
 console.log("pickedCard4: ", pickedCard4);
 
+function greeter(fn: (a: string) => void) {
+    fn("Hello, World");
+  }
+   
+  function printToConsole(s: string) {
+    console.log(s);
+  }
+   
+  greeter(printToConsole);
+
 
