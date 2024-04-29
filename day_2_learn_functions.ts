@@ -150,6 +150,7 @@ const s = firstElement(["a", "b", "c"]);
 const n = firstElement([1, 2, 3]);
 // u is of type undefined
 const u = firstElement([]);
+
 console.log("s: ", s, "n: ", n, "u: ", u);
 
 function firstElement1<Type>(arr: Type[]) {
