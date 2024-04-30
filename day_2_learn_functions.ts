@@ -154,6 +154,7 @@ const u = firstElement([]);
 console.log("s: ", s, "n: ", n, "u: ", u);
 
 function firstElement1<Type>(arr: Type[]) {
+    
     return arr[0];
   }
    
